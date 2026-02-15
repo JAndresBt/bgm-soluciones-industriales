@@ -13,23 +13,38 @@
       color: #333;
     }
 
-    header {
+    /* ================= HEADER ================= */
+    .banner {
+      width: 100%;
+      height: 320px;
+      background-image: url("https://raw.githubusercontent.com/JAndresBt/bgm-soluciones-industriales/main/banner-etiquetas.jpg.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header-content {
       background-color: #0a3d62;
       color: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 40px 20px;
     }
 
-    header h1 {
-      margin-bottom: 10px;
+    .header-content img {
+      max-width: 180px;
+      margin-bottom: 15px;
     }
 
-    header p {
-      margin-bottom: 20px;
+    .header-content h1 {
+      margin: 10px 0;
+      font-size: 32px;
+    }
+
+    .header-content p {
       font-size: 18px;
+      margin-bottom: 20px;
     }
 
-    header a {
+    .header-content a {
       background-color: #fbc531;
       color: #000;
       padding: 12px 30px;
@@ -38,6 +53,7 @@
       font-weight: bold;
     }
 
+    /* ================= SECCIONES ================= */
     section {
       padding: 50px 20px;
       max-width: 1100px;
@@ -46,8 +62,8 @@
 
     h2 {
       color: #0a3d62;
-      margin-bottom: 25px;
       text-align: center;
+      margin-bottom: 30px;
     }
 
     .grid {
@@ -63,6 +79,7 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
+    /* ================= FOOTER ================= */
     footer {
       background-color: #0a3d62;
       color: white;
@@ -76,7 +93,7 @@
       font-weight: bold;
     }
 
-    /* BOTÓN FLOTANTE WHATSAPP */
+    /* ================= WHATSAPP FLOTANTE ================= */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -91,7 +108,7 @@
       text-decoration: none;
       font-weight: bold;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 999;
+      z-index: 9999;
     }
 
     .whatsapp-float img {
@@ -107,60 +124,68 @@
 
 <body>
 
-<!-- BOTÓN FLOTANTE -->
+<!-- BOTÓN FLOTANTE WHATSAPP -->
 <a href="https://wa.me/593998431285" class="whatsapp-float" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   Cotiza ahora
 </a>
 
-<header>
-  <h1>BGM Soluciones Industriales</h1>
-  <p>Etiquetas adhesivas impresas para soluciones empresariales</p>
-  <a href="https://wa.me/593998431285" target="_blank">Cotizar por WhatsApp</a>
-</header>
+<!-- HEADER -->
+<div class="banner"></div>
 
+<div class="header-content">
+  <img src="https://raw.githubusercontent.com/JAndresBt/bgm-soluciones-industriales/main/logo-bgm.png.png" alt="BGM Soluciones Industriales">
+  <h1>BGM Soluciones Industriales</h1>
+  <p>Especialistas en etiquetas adhesivas impresas para empresas</p>
+  <a href="https://wa.me/593998431285" target="_blank">Cotizar por WhatsApp</a>
+</div>
+
+<!-- QUIÉNES SOMOS -->
 <section>
   <h2>¿Quiénes Somos?</h2>
   <p style="text-align:center; font-size:17px;">
-    En BGM Soluciones Industriales nos especializamos en resolver problemas de
-    abastecimiento de materias primas empresariales, enfocándonos en la
-    producción de etiquetas adhesivas impresas a los mejores costos,
+    En BGM Soluciones Industriales nos enfocamos en resolver problemas de
+    abastecimiento de materias primas empresariales, especialmente en la
+    producción de etiquetas adhesivas impresas a costos competitivos,
     garantizando calidad, eficiencia y soluciones personalizadas.
   </p>
 </section>
 
+<!-- TIPOS DE ETIQUETAS -->
 <section>
   <h2>Tipos de Etiquetas por Uso</h2>
   <div class="grid">
     <div class="card"><strong>Productos</strong><p>Empaques, branding y presentación.</p></div>
     <div class="card"><strong>Logística</strong><p>Identificación y trazabilidad.</p></div>
-    <div class="card"><strong>Inventario</strong><p>Control de stock y códigos.</p></div>
+    <div class="card"><strong>Inventario</strong><p>Control y gestión de stock.</p></div>
     <div class="card"><strong>Seguridad</strong><p>Sellos y control antifraude.</p></div>
   </div>
 </section>
 
+<!-- IMPRESIÓN -->
 <section>
   <h2>Tipos de Impresión</h2>
   <div class="grid">
-    <div class="card"><strong>Flexografía</strong><p>Grandes volúmenes y bajo costo.</p></div>
-    <div class="card"><strong>Prensas Planas</strong><p>Alta precisión y acabados.</p></div>
-    <div class="card"><strong>Digital</strong><p>Personalización rápida.</p></div>
+    <div class="card"><strong>Flexografía</strong><p>Alta eficiencia para grandes volúmenes.</p></div>
+    <div class="card"><strong>Prensas Planas</strong><p>Precisión y alta calidad.</p></div>
+    <div class="card"><strong>Impresión Digital</strong><p>Personalización y rapidez.</p></div>
   </div>
 </section>
 
+<!-- MATERIALES -->
 <section>
   <h2>Materiales</h2>
   <div class="grid">
-    <div class="card"><strong>Polipropileno</strong><p>Resistente al agua.</p></div>
-    <div class="card"><strong>PVC</strong><p>Durable y rígido.</p></div>
+    <div class="card"><strong>Polipropileno</strong><p>Resistente a humedad.</p></div>
+    <div class="card"><strong>PVC</strong><p>Durabilidad y rigidez.</p></div>
     <div class="card"><strong>Vinilo</strong><p>Ideal para exteriores.</p></div>
-    <div class="card"><strong>Poliéster</strong><p>Alta resistencia.</p></div>
+    <div class="card"><strong>Poliéster</strong><p>Alta resistencia industrial.</p></div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>📞 WhatsApp: <a href="https://wa.me/593998431285">+593 99 843 1285</a></p>
-  <p>📧 bgmindustriales@gmail.com</p>
   <p>BGM Soluciones Industriales © 2026</p>
 </footer>
 
